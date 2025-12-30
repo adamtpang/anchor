@@ -364,6 +364,126 @@
       opacity: 1;
     }
 
+    /* Thesis Section */
+    .thesis-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .thesis-label {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--blue);
+      background: rgba(26, 33, 255, 0.08);
+      padding: 6px 14px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      font-weight: 600;
+    }
+
+    .thesis-header h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 20px;
+    }
+
+    .thesis-abstract {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: var(--navy);
+      opacity: 0.75;
+      max-width: 700px;
+      margin: 0 auto 20px;
+      font-style: italic;
+    }
+
+    .thesis-status {
+      font-size: 0.875rem;
+      color: #b8860b;
+      font-weight: 500;
+    }
+
+    .thesis-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-bottom: 48px;
+    }
+
+    .thesis-card {
+      background: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 8px;
+      padding: 32px 24px;
+      text-align: center;
+      transition: all 0.2s ease;
+    }
+
+    .thesis-card:hover {
+      border-color: var(--blue);
+      box-shadow: 0 4px 20px rgba(26, 33, 255, 0.08);
+    }
+
+    .thesis-number {
+      font-family: 'Times New Roman', Georgia, serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: var(--blue);
+      opacity: 0.6;
+      margin-bottom: 12px;
+    }
+
+    .thesis-card h3 {
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 12px;
+    }
+
+    .thesis-desc {
+      font-size: 0.875rem;
+      line-height: 1.6;
+      color: var(--navy);
+      opacity: 0.7;
+      margin-bottom: 20px;
+    }
+
+    .thesis-placeholder {
+      background: repeating-linear-gradient(45deg,
+          rgba(0, 0, 0, 0.02),
+          rgba(0, 0, 0, 0.02) 10px,
+          rgba(0, 0, 0, 0.04) 10px,
+          rgba(0, 0, 0, 0.04) 20px);
+      border: 2px dashed rgba(0, 0, 0, 0.12);
+      border-radius: 6px;
+      padding: 24px 16px;
+    }
+
+    .thesis-placeholder span {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--navy);
+      opacity: 0.4;
+      font-weight: 500;
+    }
+
+    .thesis-citation {
+      text-align: center;
+      padding-top: 32px;
+      border-top: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    .thesis-citation p {
+      font-family: 'Times New Roman', Georgia, serif;
+      font-size: 0.875rem;
+      color: var(--navy);
+      opacity: 0.5;
+    }
+
     /* Responsive */
     @media (max-width: 768px) {
       .nav-links {
@@ -393,6 +513,21 @@
         flex-direction: column;
         gap: 24px;
         text-align: center;
+      }
+
+      .thesis-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+      }
+
+      .thesis-card {
+        padding: 24px 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .thesis-grid {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -431,6 +566,67 @@
     </section>
   </div>
 
+
+  <!-- Thesis: Critical Rationalism Applied to Business -->
+  <section class="section section-white" id="thesis">
+    <div class="container">
+      <div class="thesis-header">
+        <span class="thesis-label">Working Framework</span>
+        <h2>A Conjecture on Value Creation</h2>
+        <p class="thesis-abstract">
+          Building on Karl Popper and David Deutsch's epistemology of critical rationalism—
+          problems are soluble through the creation of new knowledge. This framework applies
+          that principle to business: identifying problems, conjecturing solutions,
+          finding people, and constructing offers.
+        </p>
+        <p class="thesis-status">⚠ Under active construction</p>
+      </div>
+
+      <div class="thesis-grid">
+        <div class="thesis-card">
+          <div class="thesis-number">I</div>
+          <h3>Problem</h3>
+          <p class="thesis-desc">The identification of genuine constraints—gaps between what is and what could be.</p>
+          <div class="thesis-placeholder">
+            <span>Exemplars forthcoming</span>
+          </div>
+        </div>
+
+        <div class="thesis-card">
+          <div class="thesis-number">II</div>
+          <h3>Solution</h3>
+          <p class="thesis-desc">Conjectures subjected to criticism. Error-correcting mechanisms built into the product.
+          </p>
+          <div class="thesis-placeholder">
+            <span>Exemplars forthcoming</span>
+          </div>
+        </div>
+
+        <div class="thesis-card">
+          <div class="thesis-number">III</div>
+          <h3>People</h3>
+          <p class="thesis-desc">Those for whom the problem is real—selection by worldview, not demographics.</p>
+          <div class="thesis-placeholder">
+            <span>Exemplars forthcoming</span>
+          </div>
+        </div>
+
+        <div class="thesis-card">
+          <div class="thesis-number">IV</div>
+          <h3>Offer</h3>
+          <p class="thesis-desc">The transformation packaged. Risk-reversal as epistemological honesty.</p>
+          <div class="thesis-placeholder">
+            <span>Exemplars forthcoming</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="thesis-citation">
+        <p>cf. Popper, K. (1963). <em>Conjectures and Refutations</em>; Deutsch, D. (2011). <em>The Beginning of
+            Infinity</em></p>
+      </div>
+    </div>
+  </section>
 
   <!-- About -->
   <section class="section" id="about">
