@@ -7,9 +7,23 @@
   <title>Anchor | Internet Solutions</title>
   <meta name="description"
     content="Anchor Marianas creates businesses that solve real problems. Founded by Adam Tomas Pangelinan.">
+
+  <!-- Canonical URL to prevent redirects -->
+  <link rel="canonical" href="https://anchormarianas.com/">
+
+  <!-- Preconnect to Google Fonts for faster loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Non-render-blocking font loading with font-display: swap -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"
+    media="print" onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </noscript>
+
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231a21ff'/></svg>">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -22,6 +36,11 @@
       --cyan: #00d9ff;
       --navy: #0a1628;
       --cream: #f8f0e2;
+    }
+
+    /* Prevent FOIT (Flash of Invisible Text) */
+    html {
+      font-display: swap;
     }
 
     body {
@@ -632,7 +651,8 @@
   <section class="section" id="about">
     <div class="container">
       <div class="about-box">
-        <img src="https://i.postimg.cc/XYFh4cZQ/merlion.jpg" alt="Adam Tomas Pangelinan" class="about-photo">
+        <img src="https://i.postimg.cc/XYFh4cZQ/merlion.jpg" alt="Adam Tomas Pangelinan" class="about-photo" width="240"
+          height="240" loading="lazy" decoding="async">
         <div class="about-content">
           <h3>Adam Tomas Pangelinan</h3>
           <p>I build internet solutions that help people and businesses succeed online. Anchor is my holding company for
